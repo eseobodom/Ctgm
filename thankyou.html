@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    p{
+      padding: 20px;
+      font-size: 25px;
+      text-align: center;
+      animation: text 1s ease-out forwards;
+    }
+    @keyframes text{
+      from{transform: translateY(250px);}
+      to{transform: translateY(0)}
+    }
+    button{
+      width: 50%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+      margin-bottom: 5px;
+      animation: slide 1s ease-out forwards;
+    }
+    @keyframes slide{
+      from{transform: translateX(-250px);}
+      to{transform: translateX(0)}
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+      <img class="logo" src="logo.jpg" alt="CTGM">
+      <div class="logo-text" id="head"></div>
+    </nav>
+    <p>
+
+Thank you for taking the time to submit your form. We appreciate your interest in getting involved in the work of God.<br>
+
+Your request has been received and is pending review. We will carefully consider your application and be in touch with you soon.<br><br><br>
+<a href="index.html"><button>Retake Form</button></a>
+    </p>
+    <footer>
+     © 2024 Christ True Gospel Mission Int'l 
+   </footer>
+<script>
+  function writeText(text){
+        let index = 0;
+        function writeNextLetter(){
+          if (index < text.length) {
+            document.getElementById('head').innerHTML += text.charAt(index);
+            index++;
+          } else {
+            clearInterval(interval);
+          }
+        }
+        let interval = setInterval(writeNextLetter,100);
+      }
+      writeText("Christ True Gospel Mission Int'l");
+</script>
+</body>
+
+</html>

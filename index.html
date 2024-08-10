@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+      <img class="logo" src="logo.jpg" alt="CTGM">
+      <div class="logo-text" id="head"></div>
+    </nav>
+
+    <div class="form-container">
+    <form id="user-form" action="https://formspree.io/f/xwpebqzg" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone Number" name="Phone" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="D.O.B" required>
+        
+        <label for="phone">Desired Position in Church:</label>
+        <input type="text" id="phone" name="Church Position" required><br>
+        
+        <button type="submit">Submit</button>
+        <div class="spinner"></div>
+    </form>
+   </div>
+   <footer>
+     © 2024 Christ True Gospel Mission Int'l 
+   </footer>
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>Success</h2>
+            <p>Your form was successfully submitted!</p>
+            <button id="successButton">OK</button>
+        </div>
+    </div>
+
+    
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <h2>Error</h2>
+            <p>There was a problem submitting your form. Please try again.</p>
+            <button id="errorButton">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
