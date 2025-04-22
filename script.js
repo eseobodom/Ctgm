@@ -53,3 +53,6 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
         let interval = setInterval(writeNextLetter,100);
       }
       writeText("Christ True Gospel Mission Int'l");
+
+const inputDate = document.querySelector('.date');
+inputDate.textContent = new Date().getFullYear();
