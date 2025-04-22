@@ -1,2 +1,2 @@
 #Output <br>
-https://ctgmchurch.vercel.app/
+https://ctgm.vercel.app/
